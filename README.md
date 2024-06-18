@@ -111,13 +111,13 @@ __README.md  images__.
 11. Run the command **uname -a**. ***(1 mark)***<br>
 ![Screenshot 2024-06-18 134128](https://github.com/aimisyazwani/OSProject/assets/170388461/f24fab91-fd35-4a19-92d6-9726a3c2f80c)
 
-13. What is the available free memory in the system. ***(1 mark)*** __Fill answer here__.
-14. What is the available disk space mounted on /workspace. ***(1 mark)*** __Fill answer here__.
-15. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** __Fill answer here__.
-16. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** __Fill answer here__.
-17. What is the TLB size of the Virtual CPU. ***(1 mark)*** __Fill answer here__.
-18. What is the CPU speed of the Virtual CPU. ***(1 mark)*** __Fill answer here__.
-19. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** __Fill answer here__.
+13. What is the available free memory in the system. ***(1 mark)*** __219Mi__.
+14. What is the available disk space mounted on /workspace. ***(1 mark)*** __20772632__.
+15. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** __Linux codespaces-433615 6.5.0-1021-azure #22~22.04.1-Ubuntu SMP Tue Apr 30 16:08:18 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux__.
+16. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** __The `ls` command in a terminal is used to list the contents of a directory, showing the names of files and directories in the current working directory. When using `ls -asl`, the command combines several options: `-a` to show all files including hidden ones, `-s` to display the size of each file in blocks, and `-l` to list detailed information such as permissions, number of links, owner, group, size, and timestamp. Essentially, `ls` provides a basic list of visible files and directories, while `ls -asl` offers a comprehensive view including hidden files, their sizes, and detailed file metadata.__.
+17. What is the TLB size of the Virtual CPU. ***(1 mark)*** __2560 4K pages__.
+18. What is the CPU speed of the Virtual CPU. ***(1 mark)*** __2917.473__.
+19. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** __1 codespa+  20   0    1136    640    640 S   0.0   0.0   0:00.06 docker-init __.
 
 ## Running your own container instance.
 
