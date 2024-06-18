@@ -78,21 +78,46 @@ Look at the TERMINAL tab. Run the following commands and provide the output here
 
 1. Run the command **pwd** . ***(1 mark)*** __/workspaces/OSProject__.
 2. Run the command **cat /etc/passwd** . ***(1 mark)***.<br>
-3. Run the command **df** . ***(1 mark)***.
-4. Run the command **du** . ***(1 mark)***.
-5. Run the command **ls** . ***(1 mark)*** __README.md  images__.
-6. Run the command **ls -asl** . ***(1 mark)***.
-7. Run the command **free -h** . ***(1 mark)***.
-8. Run the command **cat /proc/cpuinfo** . ***(1 mark)***.
-9. Run the command **top** and type **q** to quit. ***(1 mark)*** .
-10. Run the command **uname -a**. ***(1 mark)*** __Linux codespaces-69a0fc 6.5.0-1021-azure #22~22.04.1-Ubuntu SMP Tue Apr 30 16:08:18 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux__.
-11. What is the available free memory in the system. ***(1 mark)*** __Fill answer here__.
-12. What is the available disk space mounted on /workspace. ***(1 mark)*** __Fill answer here__.
-13. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** __Fill answer here__.
-14. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** __Fill answer here__.
-15. What is the TLB size of the Virtual CPU. ***(1 mark)*** __Fill answer here__.
-16. What is the CPU speed of the Virtual CPU. ***(1 mark)*** __Fill answer here__.
-17. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** __Fill answer here__.
+![Screenshot 2024-06-18 133536](https://github.com/aimisyazwani/OSProject/assets/170388461/25c4ed8a-d207-45e1-8b88-cda0dbf333f4)
+
+3. Run the command **df** . ***(1 mark)***.<br>
+![Screenshot 2024-06-18 131731](https://github.com/aimisyazwani/OSProject/assets/170388461/0060b737-98df-40c8-a855-3a56a322fd63)
+
+4. Run the command **du** . ***(1 mark)***.<br>
+![Screenshot 2024-06-18 133619](https://github.com/aimisyazwani/OSProject/assets/170388461/5c27d14f-67e4-487a-8660-f85e5d8ad522) <br>
+![Screenshot 2024-06-18 135349](https://github.com/aimisyazwani/OSProject/assets/170388461/debe879b-4a1d-449b-a961-92587cd982ff) <br>
+![Screenshot 2024-06-18 135419](https://github.com/aimisyazwani/OSProject/assets/170388461/2624b093-0fb1-49db-ae95-6c4bbfe59445) <br>
+![Screenshot 2024-06-18 135431](https://github.com/aimisyazwani/OSProject/assets/170388461/b8e85622-3c6e-4903-b4cc-eab1c44be921) <br>
+
+
+5. Run the command **ls** . ***(1 mark)*** <br>
+__README.md  images__.
+7. Run the command **ls -asl** . ***(1 mark)***. <br>
+![Screenshot 2024-06-18 133911](https://github.com/aimisyazwani/OSProject/assets/170388461/838835ef-29d2-41be-9616-588cd9e2d429)
+
+8. Run the command **free -h** . ***(1 mark)***. <br>
+![Screenshot 2024-06-18 133924](https://github.com/aimisyazwani/OSProject/assets/170388461/62ba99ea-a043-4f08-b6f6-61307b95c795)
+
+9. Run the command **cat /proc/cpuinfo** . ***(1 mark)***. <br>
+![Screenshot 2024-06-18 133954](https://github.com/aimisyazwani/OSProject/assets/170388461/031f8da6-56c2-4ca1-a4ac-84d96177b63a) <br>
+![Screenshot 2024-06-18 134014](https://github.com/aimisyazwani/OSProject/assets/170388461/4804ccb6-f9ac-4080-aabe-6b90d578f584)
+
+
+10. Run the command **top** and type **q** to quit. ***(1 mark)*** . <br>
+![Screenshot 2024-06-18 134051](https://github.com/aimisyazwani/OSProject/assets/170388461/89d869df-bf33-4c82-839f-e09fdd43b9ed) <br>
+![Screenshot 2024-06-18 134111](https://github.com/aimisyazwani/OSProject/assets/170388461/26dff743-f59f-44ed-ae17-84890e85dfd8)
+
+
+11. Run the command **uname -a**. ***(1 mark)***<br>
+![Screenshot 2024-06-18 134128](https://github.com/aimisyazwani/OSProject/assets/170388461/f24fab91-fd35-4a19-92d6-9726a3c2f80c)
+
+13. What is the available free memory in the system. ***(1 mark)*** __Fill answer here__.
+14. What is the available disk space mounted on /workspace. ***(1 mark)*** __Fill answer here__.
+15. Name the version and hardware architecture of the linux Virtual environment. ***(1 mark)*** __Fill answer here__.
+16. What is the difference between **ls** vs **ls -asl**. ***(1 mark)*** __Fill answer here__.
+17. What is the TLB size of the Virtual CPU. ***(1 mark)*** __Fill answer here__.
+18. What is the CPU speed of the Virtual CPU. ***(1 mark)*** __Fill answer here__.
+19. What is the top running process that consumes the most CPU cycles. ***(1 mark)*** __Fill answer here__.
 
 ## Running your own container instance.
 
