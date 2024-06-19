@@ -453,8 +453,23 @@ You have now set up a Node.js application in a Docker container on nodejsnet net
 1. What is the output of step 5 above, explain the error? ***(1 mark)*** <br>
 __@aimisyazwani ➜ /workspaces/OSProject (main) $ curl http://localhost:3000/random
 Server Error@aimisyazwani ➜ /workspaces/OSProject (main) $__.<br>
+![Screenshot 2024-06-19 122556](https://github.com/aimisyazwani/OSProject/assets/170388461/b4043393-03ee-4928-9f33-3e7485770eb9) <br>
+![Screenshot 2024-06-19 122620](https://github.com/aimisyazwani/OSProject/assets/170388461/1c3ddf8d-3219-42fe-be29-93ea341c4ee2) <br>
+__Using `curl http://localhost:3000/random` returned the "Server Error" error message, which means something went wrong with the Node.js server application inside your Docker container. Often, this is a very generic response when an unhandled error happens in the server application.__.
 
-2. Show the instruction needed to make this work. ***(1 mark)*** __Fill answer here__.
+
+
+2. Show the instruction needed to make this work. ***(1 mark)*** <br>
+__1. docker network create mysqlnet__.<br>
+__2. docker run --name mysql-container --network mysqlnet -e MYSQL_ROOT_PASSWORD=rootpassword -e MYSQL_DATABASE=mydatabase -e MYSQL_USER=myuser -e MYSQL_PASSWORD=mypassword -d mysql:latest__.<br>
+__3. docker start mysql-container__.<br>
+__4. docker exec -it mysql-container bash__.<br>
+__5. mysql> CREATE TABLE mytable (
+    ->   id INT AUTO_INCREMENT PRIMARY KEY,
+    ->   name VARCHAR(255) NOT NULL,
+    ->   value VARCHAR(255) NOT NULL
+    -> );__.<br>
+![Screenshot 2024-06-19 023842](https://github.com/aimisyazwani/OSProject/assets/170388461/ed2407cb-3ec6-41f0-9431-23cb11327ac5)
 
 
 
