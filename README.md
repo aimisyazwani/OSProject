@@ -24,8 +24,10 @@ Team Mates:
 
 ***Questions:***
 
-1. What is the link of the fork OSProject in your repository. ***(1 mark)*** __https://github.com/aimisyazwani/OSProject__.
-2. How many files and folders are in this repository. ***(1 mark)*** __7 files 1 folder__.
+1. What is the link of the fork OSProject in your repository. ***(1 mark)*** <br>
+__https://github.com/aimisyazwani/OSProject__.
+2. How many files and folders are in this repository. ***(1 mark)*** <br>
+__7 files 1 folder__.
 
 
 ## Exploring github codespaces
@@ -57,9 +59,12 @@ Team Mates:
 
 ***Questions:***
 
-1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)*** __Ubuntu Linux image__.
-2. What are the two options of ram, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** __8 GB RAM, and 32 GB storage, up to 32 cores, 64 GB RAM, and 128 GB storage__.
-3. Why must we commit and sync our current work on source control? ***(1 mark)*** __Our work will be lost since it is not saved into the main repository when we submit our project__.
+1. What is default OS used to run the virtual environment for codespaces. ***(1 mark)*** <br>
+__Ubuntu Linux image__.
+2. What are the two options of ram, disk and vcpu configuration you can have in running codespaces . ***(1 mark)*** <br>
+__8 GB RAM, and 32 GB storage, up to 32 cores, 64 GB RAM, and 128 GB storage__.
+3. Why must we commit and sync our current work on source control? ***(1 mark)*** <br>
+__Our work will be lost since it is not saved into the main repository when we submit our project__.
 
 ## Exploring the Terminal
 
@@ -76,7 +81,8 @@ codespace
 
 Look at the TERMINAL tab. Run the following commands and provide the output here. 
 
-1. Run the command **pwd** . ***(1 mark)*** __/workspaces/OSProject__.
+1. Run the command **pwd** . ***(1 mark)*** <br>
+__/workspaces/OSProject__.
 2. Run the command **cat /etc/passwd** . ***(1 mark)***.<br>
 ![Screenshot 2024-06-18 133536](https://github.com/aimisyazwani/OSProject/assets/170388461/25c4ed8a-d207-45e1-8b88-cda0dbf333f4)
 
@@ -243,7 +249,8 @@ docker run --detach -v /workspaces/OSProject/webpage:/usr/local/apache2/htdocs/ 
 
 ***Questions:***
 
-1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)*** __Fill answer here__.
+1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)*** <br>
+__drwxr-xr-x+ 2 1000 1000 4096 Jun 18 14:29 /usr/local/apache2/htdocs__.
 2. What port is the apache web server running. ***(1 mark)*** <br<
 __Port 80__.
 3. What port is open for http protocol on the host machine? ***(1 mark)*** <br>
