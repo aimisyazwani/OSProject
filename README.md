@@ -250,8 +250,11 @@ docker run --detach -v /workspaces/OSProject/webpage:/usr/local/apache2/htdocs/ 
 ***Questions:***
 
 1. What is the permission of folder /usr/local/apache/htdocs and what user and group owns the folder? . ***(2 mark)*** <br>
-__drwxr-xr-x+ 2 1000 1000 4096 Jun 18 14:29 /usr/local/apache2/htdocs__.
-2. What port is the apache web server running. ***(1 mark)*** <br<
+__drwxr-xr-x+ 2 1000 1000 4096 Jun 18 14:29 /usr/local/apache2/htdocs__.<br>
+__Permissions of /usr/local/apache2/htdocs: drwxr-xr-x+__.<br>
+__User and Group of /usr/local/apache2/htdocs: UID 1000 and GID 1000__.<br>
+
+2. What port is the apache web server running. ***(1 mark)*** <br>
 __Port 80__.
 3. What port is open for http protocol on the host machine? ***(1 mark)*** <br>
 __Port 8080__.
@@ -274,16 +277,21 @@ docker run -itd --net rednet --name c2 busybox sh
 ***Questions:***
 
 1. Describe what is busybox and what is command switch **--name** is for? . ***(2 mark)***<br> __BusyBox is a software suite that provides several Unix utilities in a single executable file, often used in embedded systems. The --name switch is used to assign a custom name to a Docker container.__.
-2. Explore the network using the command ```docker network ls```, show the output of your terminal. ***(1 mark)*** __Fill answer here__.
+2. Explore the network using the command ```docker network ls```, show the output of your terminal. ***(1 mark)*** <br>
+![Screenshot 2024-06-18 225838](https://github.com/aimisyazwani/OSProject/assets/170388461/5d39f095-77d5-4eac-a357-af8e4bee3b0a)
+
 3. Using ```docker inspect c1``` and ```docker inspect c2``` inscpect the two network. What is the gateway of bluenet and rednet.? ***(1 mark)***<br> 
 __Bluenet Gateway: 172.18.0.1__.<br>
 __Rednet Gateway: 172.19.0.1__.<br>
 
 4. What is the network address for the running container c1 and c2? ***(1 mark)***<br>
  __c1: IPAddress: 172.18.0.2__.<br>
- __c: IPAddress": 172.19.0.2__<br>
+ __c2: IPAddress: 172.19.0.2__.<br>
 
-5. Using the command ```docker exec c1 ping c2```, which basically tries to do a ping from container c1 to c2. Are you able to ping? Show your output . ***(1 mark)*** __Fill answer here__.
+5. Using the command ```docker exec c1 ping c2```, which basically tries to do a ping from container c1 to c2. Are you able to ping? Show your output . ***(1 mark)***<br>
+![Screenshot 2024-06-18 231236](https://github.com/aimisyazwani/OSProject/assets/170388461/a1441b29-3b9d-4e2d-867e-0591d37ef29f) <br>
+ __Not be able to ping.__.
+
 
 ## Bridging two SUB Networks
 1. Let's try this again by creating a network to bridge the two containers in the two subnetworks
@@ -295,7 +303,9 @@ docker exec c1 ping c2
 ```
 ***Questions:***
 
-1. Are you able to ping? Show your output . ***(1 mark)*** __Fill answer here__.
+1. Are you able to ping? Show your output . ***(1 mark)*** <br>
+![Screenshot 2024-06-18 235012](https://github.com/aimisyazwani/OSProject/assets/170388461/7926506f-82e5-4e38-b083-178c157b370f)
+
 2. What is different from the previous ping in the section above? ***(1 mark)*** <br>
 __In the first attempt, containers `c1` and `c2` were in separate Docker networks (`bluenet` and `rednet`). Docker isolates networks by default, so `c1` couldn't directly reach `c2` with a ping command.In the second attempt, a new network called `bridgenet` was created and both `c1` and `c2` were connected to it. This bridging network acts like a bridge between the two containers, allowing `c1` to successfully ping `c2`. This setup enables communication between containers that are on different networks by connecting them through a common network.__.
 
@@ -440,7 +450,10 @@ You have now set up a Node.js application in a Docker container on nodejsnet net
 
 ***Questions:***
 
-1. What is the output of step 5 above, explain the error? ***(1 mark)*** __Fill answer here__.
+1. What is the output of step 5 above, explain the error? ***(1 mark)*** <br>
+__@aimisyazwani ➜ /workspaces/OSProject (main) $ curl http://localhost:3000/random
+Server Error@aimisyazwani ➜ /workspaces/OSProject (main) $__.<br>
+
 2. Show the instruction needed to make this work. ***(1 mark)*** __Fill answer here__.
 
 
